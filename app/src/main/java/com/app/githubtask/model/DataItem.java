@@ -31,7 +31,7 @@ public class DataItem{
 	private String status;
 
 	@ColumnInfo
-	private String comments;
+	private String comments="";
 
 	public String getComments() {
 		return comments;
