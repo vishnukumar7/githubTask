@@ -18,6 +18,14 @@ public class NotificationsFragment extends Fragment {
 
     private FragmentNotificationsBinding binding;
 
+    private static NotificationsFragment instance;
+
+    public static NotificationsFragment getInstance() {
+        if(instance==null)
+            instance=new NotificationsFragment();
+        return instance;
+    }
+
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
         binding = DataBindingUtil.inflate(inflater, R.layout.fragment_notifications, container, false);

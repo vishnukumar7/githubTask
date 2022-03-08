@@ -22,22 +22,29 @@ public interface UserDao {
     List<DataItem> getAll();
 
     @Query("select * from users where id=:id")
-    List<DataItem> getId(int id);
+    List<DataItem> getListById(int id);
+
+    @Query("select * from users where id=:id limit 1")
+    DataItem getItemById(int id);
 
     @Ignore
     default void insertOrUpdate(List<DataItem> dataItemList) {
         for (DataItem item : dataItemList) {
-            if (getId(item.getId()).size() > 0)
+            List<DataItem> temp=getListById(item.getId());
+            if (temp.size() > 0) {
+                item.setComments(temp.get(0).getComments());
                 update(item);
+            }
             else
                 insert(item);
         }
     }
 
     @Ignore
-    default void insertOrUpdate(DataItem dataItem) {
-        if (getId(dataItem.getId()).size() > 0)
+    default void updateItem(DataItem dataItem) {
+        if (getListById(dataItem.getId()).size() > 0) {
             update(dataItem);
+        }
         else
             insert(dataItem);
     }
