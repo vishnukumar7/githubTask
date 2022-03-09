@@ -15,4 +15,7 @@
     <string name="ok">Ok</string>
     <string name="comments_required">comments is required</string>
     <string name="detail">Detail</string>
+    <string name="submit_comment">Submit Comment</string>
+    <string name="same_as_previous_cooments">same as previous comments</string>
+    <string name="save_successfully">Save successfully</string>
 </resources>

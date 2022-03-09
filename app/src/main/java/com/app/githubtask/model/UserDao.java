@@ -18,6 +18,9 @@ public interface UserDao {
     @Update
     void update(DataItem dataItem);
 
+    @Insert
+    void insertList(List<DataItem> dataItemList);
+
     @Query("select * from users")
     List<DataItem> getAll();
 

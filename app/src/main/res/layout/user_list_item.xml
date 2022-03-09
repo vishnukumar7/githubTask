@@ -4,7 +4,10 @@
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_margin="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginStart="5dp"
+        android:background="@color/white"
         android:id="@+id/mainLay"
         android:layout_height="wrap_content">
 
@@ -72,22 +75,10 @@
             app:layout_constraintTop_toBottomOf="@id/userMailView"
             android:layout_height="wrap_content"/>
 
-
-        <androidx.appcompat.widget.AppCompatTextView
-            android:layout_width="match_parent"
-            android:id="@+id/comments"
-            android:padding="10dp"
-            android:text="@string/add_comments"
-            android:textSize="16sp"
-            android:textColor="@color/purple_700"
-            android:textStyle="bold"
-            app:layout_constraintTop_toBottomOf="@id/userStatusView"
-            android:layout_height="wrap_content"/>
-
         <View
             android:layout_width="match_parent"
             android:layout_height=".5dp"
-            app:layout_constraintTop_toBottomOf="@id/comments"
+            app:layout_constraintTop_toBottomOf="@id/userStatusView"
             android:background="@color/divider"
             android:layout_marginTop="5dp"/>
 

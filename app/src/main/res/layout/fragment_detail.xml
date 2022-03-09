@@ -1,204 +1,229 @@
 <?xml version="1.0" encoding="utf-8"?>
 <layout>
-    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:app="http://schemas.android.com/apk/res-auto"
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
-        android:orientation="vertical"
         android:layout_height="match_parent"
         tools:context=".ui.dashboard.DetailFragment">
 
-        <RelativeLayout
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="?actionBarSize">
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="?actionBarSize">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="@string/detail"
+                    android:textColor="@color/primaryText"
+                    android:textSize="18sp" />
+            </RelativeLayout>
 
             <androidx.appcompat.widget.AppCompatTextView
                 android:layout_width="match_parent"
-                android:textColor="@color/primaryText"
+                android:text="@string/user_id"
+                android:textStyle="bold"
+                android:layout_marginTop="10dp"
                 android:textSize="18sp"
-                android:text="@string/detail"
-                android:layout_height="match_parent"
-                android:gravity="center" />
-        </RelativeLayout>
-
-        <androidx.appcompat.widget.AppCompatTextView
-            android:layout_width="match_parent"
-            android:text="@string/user_id"
-            android:textStyle="bold"
-            android:layout_marginTop="10dp"
-            android:textSize="18sp"
-            android:padding="10dp"
-            android:layout_marginStart="10dp"
-            android:layout_marginEnd="10dp"
-            android:textColor="@color/primaryText"
-            android:layout_height="wrap_content"/>
+                android:padding="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:textColor="@color/primaryText"
+                android:layout_height="wrap_content"/>
 
 
-        <androidx.appcompat.widget.AppCompatTextView
-            android:layout_width="match_parent"
-            android:id="@+id/userId"
-            android:textColor="@color/primaryText"
-            android:textSize="16sp"
-            android:padding="10dp"
-            android:layout_marginStart="10dp"
-            android:layout_marginEnd="10dp"
-            android:layout_height="wrap_content"/>
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="match_parent"
+                android:id="@+id/userId"
+                android:textColor="@color/primaryText"
+                android:textSize="16sp"
+                android:padding="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_height="wrap_content"/>
 
-        <View
-            android:layout_width="match_parent"
-            android:layout_marginStart="10dp"
-            android:layout_marginEnd="10dp"
-            android:background="@color/divider"
-            android:layout_height="0.5dp"/>
+            <View
+                android:layout_width="match_parent"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:background="@color/divider"
+                android:layout_height="0.5dp"/>
 
-        <androidx.appcompat.widget.AppCompatTextView
-            android:layout_width="match_parent"
-            android:text="@string/user_name"
-            android:textStyle="bold"
-            android:layout_marginTop="10dp"
-            android:layout_marginStart="10dp"
-            android:layout_marginEnd="10dp"
-            android:textSize="18sp"
-            android:padding="10dp"
-            android:textColor="@color/primaryText"
-            android:layout_height="wrap_content"/>
-
-
-        <androidx.appcompat.widget.AppCompatTextView
-            android:layout_width="match_parent"
-            android:id="@+id/userName"
-            android:textColor="@color/primaryText"
-            android:textSize="16sp"
-            android:layout_marginStart="10dp"
-            android:layout_marginEnd="10dp"
-            android:padding="10dp"
-            android:layout_height="wrap_content"/>
-
-        <View
-            android:layout_marginStart="10dp"
-            android:layout_marginEnd="10dp"
-            android:layout_width="match_parent"
-            android:background="@color/divider"
-            android:layout_height="0.5dp"/>
-
-        <androidx.appcompat.widget.AppCompatTextView
-            android:layout_width="match_parent"
-            android:text="@string/email"
-            android:layout_marginStart="10dp"
-            android:layout_marginEnd="10dp"
-            android:textStyle="bold"
-            android:layout_marginTop="10dp"
-            android:textSize="18sp"
-            android:padding="10dp"
-            android:textColor="@color/primaryText"
-            android:layout_height="wrap_content"/>
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="match_parent"
+                android:text="@string/user_name"
+                android:textStyle="bold"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:textSize="18sp"
+                android:padding="10dp"
+                android:textColor="@color/primaryText"
+                android:layout_height="wrap_content"/>
 
 
-        <androidx.appcompat.widget.AppCompatTextView
-            android:layout_width="match_parent"
-            android:id="@+id/userMail"
-            android:layout_marginStart="10dp"
-            android:layout_marginEnd="10dp"
-            android:textColor="@color/primaryText"
-            android:textSize="16sp"
-            android:padding="10dp"
-            android:layout_height="wrap_content"/>
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="match_parent"
+                android:id="@+id/userName"
+                android:textColor="@color/primaryText"
+                android:textSize="16sp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:padding="10dp"
+                android:layout_height="wrap_content"/>
 
-        <View
-            android:layout_marginStart="10dp"
-            android:layout_marginEnd="10dp"
-            android:layout_width="match_parent"
-            android:background="@color/divider"
-            android:layout_height="0.5dp"/>
+            <View
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_width="match_parent"
+                android:background="@color/divider"
+                android:layout_height="0.5dp"/>
 
-        <androidx.appcompat.widget.AppCompatTextView
-            android:layout_width="match_parent"
-            android:text="@string/gender"
-            android:layout_marginStart="10dp"
-            android:layout_marginEnd="10dp"
-            android:textStyle="bold"
-            android:layout_marginTop="10dp"
-            android:textSize="18sp"
-            android:padding="10dp"
-            android:textColor="@color/primaryText"
-            android:layout_height="wrap_content"/>
-
-
-        <androidx.appcompat.widget.AppCompatTextView
-            android:layout_width="match_parent"
-            android:id="@+id/gender"
-            android:layout_marginStart="10dp"
-            android:layout_marginEnd="10dp"
-            android:textColor="@color/primaryText"
-            android:textSize="16sp"
-            android:padding="10dp"
-            android:layout_height="wrap_content"/>
-
-        <View
-            android:layout_marginStart="10dp"
-            android:layout_marginEnd="10dp"
-            android:layout_width="match_parent"
-            android:background="@color/divider"
-            android:layout_height="0.5dp"/>
-
-        <androidx.appcompat.widget.AppCompatTextView
-            android:layout_width="match_parent"
-            android:text="@string/status"
-            android:layout_marginStart="10dp"
-            android:layout_marginEnd="10dp"
-            android:textStyle="bold"
-            android:layout_marginTop="10dp"
-            android:textSize="18sp"
-            android:padding="10dp"
-            android:textColor="@color/primaryText"
-            android:layout_height="wrap_content"/>
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="match_parent"
+                android:text="@string/email"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:textStyle="bold"
+                android:layout_marginTop="10dp"
+                android:textSize="18sp"
+                android:padding="10dp"
+                android:textColor="@color/primaryText"
+                android:layout_height="wrap_content"/>
 
 
-        <androidx.appcompat.widget.AppCompatTextView
-            android:layout_width="match_parent"
-            android:id="@+id/status"
-            android:layout_marginStart="10dp"
-            android:layout_marginEnd="10dp"
-            android:textColor="@color/primaryText"
-            android:textSize="16sp"
-            android:padding="10dp"
-            android:layout_height="wrap_content"/>
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="match_parent"
+                android:id="@+id/userMail"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:textColor="@color/primaryText"
+                android:textSize="16sp"
+                android:padding="10dp"
+                android:layout_height="wrap_content"/>
 
-        <View
-            android:layout_marginStart="10dp"
-            android:layout_marginEnd="10dp"
-            android:layout_width="match_parent"
-            android:background="@color/divider"
-            android:layout_height="0.5dp"/>
+            <View
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_width="match_parent"
+                android:background="@color/divider"
+                android:layout_height="0.5dp"/>
 
-        <androidx.appcompat.widget.AppCompatTextView
-            android:layout_width="match_parent"
-            android:text="@string/comments"
-            android:layout_marginStart="10dp"
-            android:layout_marginEnd="10dp"
-            android:textStyle="bold"
-            android:layout_marginTop="10dp"
-            android:textSize="18sp"
-            android:padding="10dp"
-            android:textColor="@color/primaryText"
-            android:layout_height="wrap_content"/>
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="match_parent"
+                android:text="@string/gender"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:textStyle="bold"
+                android:layout_marginTop="10dp"
+                android:textSize="18sp"
+                android:padding="10dp"
+                android:textColor="@color/primaryText"
+                android:layout_height="wrap_content"/>
 
 
-        <androidx.appcompat.widget.AppCompatTextView
-            android:layout_width="match_parent"
-            android:id="@+id/comments"
-            android:layout_marginStart="10dp"
-            android:layout_marginEnd="10dp"
-            android:textColor="@color/primaryText"
-            android:textSize="16sp"
-            android:padding="10dp"
-            android:layout_height="wrap_content"/>
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="match_parent"
+                android:id="@+id/gender"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:textColor="@color/primaryText"
+                android:textSize="16sp"
+                android:padding="10dp"
+                android:layout_height="wrap_content"/>
 
-        <View
-            android:layout_marginStart="10dp"
-            android:layout_marginEnd="10dp"
-            android:layout_width="match_parent"
-            android:background="@color/divider"
-            android:layout_height="0.5dp"/>
-    </LinearLayout>
+            <View
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_width="match_parent"
+                android:background="@color/divider"
+                android:layout_height="0.5dp"/>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="match_parent"
+                android:text="@string/status"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:textStyle="bold"
+                android:layout_marginTop="10dp"
+                android:textSize="18sp"
+                android:padding="10dp"
+                android:textColor="@color/primaryText"
+                android:layout_height="wrap_content"/>
+
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="match_parent"
+                android:id="@+id/status"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:textColor="@color/primaryText"
+                android:textSize="16sp"
+                android:padding="10dp"
+                android:layout_height="wrap_content"/>
+
+            <View
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_width="match_parent"
+                android:background="@color/divider"
+                android:layout_height="0.5dp"/>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="match_parent"
+                android:text="@string/comments"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:textStyle="bold"
+                android:layout_marginTop="10dp"
+                android:textSize="18sp"
+                android:padding="10dp"
+                android:textColor="@color/primaryText"
+                android:layout_height="wrap_content"/>
+
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:layout_width="match_parent"
+                android:id="@+id/comments"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:background="@color/white"
+                android:enabled="false"
+                android:textColor="@color/primaryText"
+                android:textSize="16sp"
+                android:padding="10dp"
+                android:layout_height="wrap_content"/>
+
+            <View
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_width="match_parent"
+                android:background="@color/divider"
+                android:layout_height="0.5dp"/>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_width="wrap_content"
+                android:layout_gravity="end"
+                android:text="@string/submit_comment"
+                android:paddingStart="20dp"
+                android:visibility="gone"
+                android:id="@+id/submitComments"
+                android:paddingEnd="20sp"
+                android:textColor="@color/white"
+                android:background="@color/dark_blue"
+                android:layout_marginTop="20sp"
+                android:paddingTop="15sp"
+                android:paddingBottom="15sp"
+                android:layout_marginEnd="20sp"
+                android:layout_marginBottom="30dp"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+    </ScrollView>
+
 </layout>
